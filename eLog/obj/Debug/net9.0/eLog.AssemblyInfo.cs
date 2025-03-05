@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("eLog")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a70b2a1fcf6b4cf91c83dc0d6d0e97215edf249")]
 [assembly: System.Reflection.AssemblyProductAttribute("eLog")]
 [assembly: System.Reflection.AssemblyTitleAttribute("eLog")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

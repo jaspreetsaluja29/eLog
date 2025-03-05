@@ -32,7 +32,7 @@ public class DatabaseHelper
     }
 
     // Execute Non-Query (Insert, Update, Delete)
-    public int ExecuteNonQuery(string query, SqlParameter[] parameters = null)
+    public int ExecuteNonQuery(string query, CommandType storedProcedure, SqlParameter[] parameters = null)
     {
         using SqlConnection conn = new SqlConnection(_connectionString);
         conn.Open();

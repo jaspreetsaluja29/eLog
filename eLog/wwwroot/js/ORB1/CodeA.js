@@ -1,6 +1,6 @@
 ﻿// Open the add new record window
 function openAddWindow() {
-    window.open('/CodeA/DataEntry_CodeA', 'AddRecord', 'width=600,height=400');
+    window.open('/CodeA/DataEntry_CodeA', 'AddRecord');
 }
 
 // Track sorting order

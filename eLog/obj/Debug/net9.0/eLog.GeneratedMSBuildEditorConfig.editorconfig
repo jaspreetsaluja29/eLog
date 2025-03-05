@@ -9,61 +9,61 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = eLog
 build_property.RootNamespace = eLog
-build_property.ProjectDir = A:\Jaspreet\Marine\eLog\eLog\
+build_property.ProjectDir = A:\Jaspreet\Github\eLog\eLog\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = A:\Jaspreet\Marine\eLog\eLog
+build_property.MSBuildProjectDirectory = A:\Jaspreet\Github\eLog\eLog
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[A:/Jaspreet/Marine/eLog/eLog/Views/Account/Login.cshtml]
+[A:/Jaspreet/Github/eLog/eLog/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/Jaspreet/Marine/eLog/eLog/Views/Home/Index.cshtml]
+[A:/Jaspreet/Github/eLog/eLog/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/Jaspreet/Marine/eLog/eLog/Views/Home/Privacy.cshtml]
+[A:/Jaspreet/Github/eLog/eLog/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/Jaspreet/Marine/eLog/eLog/Views/ORB1/CodeA.cshtml]
+[A:/Jaspreet/Github/eLog/eLog/Views/ORB1/CodeA.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT1JCMVxDb2RlQS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/Jaspreet/Marine/eLog/eLog/Views/ORB1/DataEntry_CodeA.cshtml]
+[A:/Jaspreet/Github/eLog/eLog/Views/ORB1/DataEntry_CodeA.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT1JCMVxEYXRhRW50cnlfQ29kZUEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/Jaspreet/Marine/eLog/eLog/Views/ORB1/FirstPageCapacity.cshtml]
+[A:/Jaspreet/Github/eLog/eLog/Views/ORB1/FirstPageCapacity.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT1JCMVxGaXJzdFBhZ2VDYXBhY2l0eS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/Jaspreet/Marine/eLog/eLog/Views/Shared/Error.cshtml]
+[A:/Jaspreet/Github/eLog/eLog/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/Jaspreet/Marine/eLog/eLog/Views/Shared/_Layout.cshtml]
+[A:/Jaspreet/Github/eLog/eLog/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/Jaspreet/Marine/eLog/eLog/Views/Shared/_ValidationScriptsPartial.cshtml]
+[A:/Jaspreet/Github/eLog/eLog/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/Jaspreet/Marine/eLog/eLog/Views/_ViewImports.cshtml]
+[A:/Jaspreet/Github/eLog/eLog/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/Jaspreet/Marine/eLog/eLog/Views/_ViewStart.cshtml]
+[A:/Jaspreet/Github/eLog/eLog/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/Jaspreet/Marine/eLog/eLog/Views/Shared/_LoginLayout.cshtml]
+[A:/Jaspreet/Github/eLog/eLog/Views/Shared/_LoginLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-lyohvs07op

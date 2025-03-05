@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "A:\\Jaspreet\\Marine\\eLog\\eLog\\eLog.csproj": {}
+    "A:\\Jaspreet\\Github\\eLog\\eLog\\eLog.csproj": {}
   },
   "projects": {
-    "A:\\Jaspreet\\Marine\\eLog\\eLog\\eLog.csproj": {
+    "A:\\Jaspreet\\Github\\eLog\\eLog\\eLog.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\Jaspreet\\Marine\\eLog\\eLog\\eLog.csproj",
+        "projectUniqueName": "A:\\Jaspreet\\Github\\eLog\\eLog\\eLog.csproj",
         "projectName": "eLog",
-        "projectPath": "A:\\Jaspreet\\Marine\\eLog\\eLog\\eLog.csproj",
+        "projectPath": "A:\\Jaspreet\\Github\\eLog\\eLog\\eLog.csproj",
         "packagesPath": "C:\\Users\\Jaspreet\\.nuget\\packages\\",
-        "outputPath": "A:\\Jaspreet\\Marine\\eLog\\eLog\\obj\\",
+        "outputPath": "A:\\Jaspreet\\Github\\eLog\\eLog\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

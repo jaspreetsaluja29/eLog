@@ -74,46 +74,54 @@ namespace eLog.Controllers.ORB1
             return View("~/Views/ORB1/DataEntry_CodeA.cshtml", new CodeAModel());
         }
 
+        [Route("ORB1/CodeA/Create")]
         [HttpPost]
-        [Authorize(Roles = "User")]
-        public IActionResult Create(CodeAModel model)
+        public IActionResult Create([FromBody] CodeAModel model)
         {
-            string storedProcedure = "proc_InsertORB1CodeA";
-
-            var parameters = new SqlParameter[]
+            if (model == null)
             {
-                new SqlParameter("@UserId", model.UserId),
-                new SqlParameter("@EntryDate", model.EntryDate),
-                new SqlParameter("@BallastingOrCleaning", model.BallastingOrCleaning),
-                new SqlParameter("@LastCleaningDate", (object)model.LastCleaningDate ?? DBNull.Value),
-                new SqlParameter("@OilCommercialName", (object)model.OilCommercialName ?? DBNull.Value),
-                new SqlParameter("@DensityViscosity", (object)model.DensityViscosity ?? DBNull.Value),
-                new SqlParameter("@IdentityOfTanksBallasted", (object)model.IdentityOfTanksBallasted ?? DBNull.Value),
-                new SqlParameter("@CleanedLastContainedOil", model.CleanedLastContainedOil),
-                new SqlParameter("@PreviousOilType", (object)model.PreviousOilType ?? DBNull.Value),
-                new SqlParameter("@QuantityBallast", model.QuantityBallast ?? (object)DBNull.Value),
-                new SqlParameter("@StartCleaningTime", (object)model.StartCleaningTime ?? DBNull.Value),
-                new SqlParameter("@PositionStart", (object)model.PositionStart ?? DBNull.Value),
-                new SqlParameter("@StopCleaningTime", (object)model.StopCleaningTime ?? DBNull.Value),
-                new SqlParameter("@PositionStop", (object)model.PositionStop ?? DBNull.Value),
-                new SqlParameter("@IdentifyTanks", (object)model.IdentifyTanks ?? DBNull.Value),
-                new SqlParameter("@MethodCleaning", (object)model.MethodCleaning ?? DBNull.Value),
-                new SqlParameter("@ChemicalType", (object)model.ChemicalType ?? DBNull.Value),
-                new SqlParameter("@ChemicalQuantity", model.ChemicalQuantity ?? (object)DBNull.Value),
-                new SqlParameter("@StartBallastingTime", (object)model.StartBallastingTime ?? DBNull.Value),
-                new SqlParameter("@BallastingPositionStart", (object)model.BallastingPositionStart ?? DBNull.Value),
-                new SqlParameter("@CompletionBallastingTime", (object)model.CompletionBallastingTime ?? DBNull.Value),
-                new SqlParameter("@BallastingPositionCompletion", (object)model.BallastingPositionCompletion ?? DBNull.Value),
-                new SqlParameter("@RecordEntryDateTime", model.RecordEntryDateTime),
-                new SqlParameter("@RecordLastModifiedDateTime", model.RecordLastModifiedDateTime),
-                new SqlParameter("@StatusID", model.StatusID),
-                new SqlParameter("@ApprovedBy", model.ApprovedBy),
-                new SqlParameter("@Comments", (object)model.Comments ?? DBNull.Value)
-            };
+                return BadRequest("Invalid data received.");
+            }
 
-            //_db.ExecuteNonQuery(storedProcedure, CommandType.StoredProcedure, parameters);
+            try
+            {
+                string storedProcedure = "proc_InsertORB1CodeA";
+                var parameters = new SqlParameter[]
+                {
+            new SqlParameter("@UserId", model.UserId),
+            new SqlParameter("@EntryDate", model.EntryDate),
+            new SqlParameter("@BallastingOrCleaning", model.BallastingOrCleaning),
+            new SqlParameter("@LastCleaningDate", (object)model.LastCleaningDate ?? DBNull.Value),
+            new SqlParameter("@OilCommercialName", (object)model.OilCommercialName ?? DBNull.Value),
+            new SqlParameter("@DensityViscosity", (object)model.DensityViscosity ?? DBNull.Value),
+            new SqlParameter("@IdentityOfTanksBallasted", (object)model.IdentityOfTanksBallasted ?? DBNull.Value),
+            new SqlParameter("@CleanedLastContainedOil", model.CleanedLastContainedOil),
+            new SqlParameter("@PreviousOilType", (object)model.PreviousOilType ?? DBNull.Value),
+            new SqlParameter("@QuantityBallast", model.QuantityBallast ?? (object)DBNull.Value),
+            new SqlParameter("@StartCleaningTime", (object)model.StartCleaningTime ?? DBNull.Value),
+            new SqlParameter("@PositionStart", (object)model.PositionStart ?? DBNull.Value),
+            new SqlParameter("@StopCleaningTime", (object)model.StopCleaningTime ?? DBNull.Value),
+            new SqlParameter("@PositionStop", (object)model.PositionStop ?? DBNull.Value),
+            new SqlParameter("@IdentifyTanks", (object)model.IdentifyTanks ?? DBNull.Value),
+            new SqlParameter("@MethodCleaning", (object)model.MethodCleaning ?? DBNull.Value),
+            new SqlParameter("@ChemicalType", (object)model.ChemicalType ?? DBNull.Value),
+            new SqlParameter("@ChemicalQuantity", model.ChemicalQuantity ?? (object)DBNull.Value),
+            new SqlParameter("@StartBallastingTime", (object)model.StartBallastingTime ?? DBNull.Value),
+            new SqlParameter("@BallastingPositionStart", (object)model.BallastingPositionStart ?? DBNull.Value),
+            new SqlParameter("@CompletionBallastingTime", (object)model.CompletionBallastingTime ?? DBNull.Value),
+            new SqlParameter("@BallastingPositionCompletion", (object)model.BallastingPositionCompletion ?? DBNull.Value),
+            new SqlParameter("@RecordEntryDateTime", DateTime.UtcNow),
+            new SqlParameter("@RecordLastModifiedDateTime", DateTime.UtcNow),
+                };
 
-            return RedirectToAction("Index");
+                _db.ExecuteNonQuery(storedProcedure, CommandType.StoredProcedure, parameters);
+
+                return Json(new { success = true, message = "Data inserted successfully!" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
     }
 }
